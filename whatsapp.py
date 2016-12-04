@@ -46,19 +46,6 @@ class Whatsapp:
 				page = self.browser.page_source
 			except:
 				print "Unable to load page"
-			
-			try :
-				with open('temp.html','w') as f:
-					f.write(page)
-			except:
-				print "Unable to open file"
-
-			try:
-				with open('temp.html','r') as f:
-					page = f.read()
-			except:
-				print "Unable to read file"
-
 
 			tree = html.fromstring(page)
 
@@ -71,7 +58,7 @@ class Whatsapp:
 				print person
 
 			self.sendMessage(unread)
-			time.sleep(10)
+			time.sleep(10)  
 
 
 		
