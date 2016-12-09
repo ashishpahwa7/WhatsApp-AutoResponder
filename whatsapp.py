@@ -17,7 +17,7 @@ class Whatsapp:
 		self.browser = webdriver.Firefox()
 
 	def sendMessage(self, people):
-		msg = "Hello, Ashish is currently unavailable , I am his virtual assistant.Kindly leave your message to me, I will inform him once he is free."
+		msg = "Hello, Ashish is currently unavailable, Please leave your message after next beep ....*Beep* :P "
 		
 		for name in people:
 			try:
